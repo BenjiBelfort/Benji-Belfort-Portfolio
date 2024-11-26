@@ -1,8 +1,20 @@
 .projectImageWrapper {
     position: relative;
     display: inline-block;
-  }
-  
+}
+
+.projectCard.noLink {
+    transition: transform 200ms ease-in-out;
+}
+
+.projectCard:hover {
+    transform: scale(1.05);
+}
+
+.projectCard.noLink:hover {
+    transform: scale(1.05);
+}
+
 .label {
     position: absolute;
     right: 8px;
