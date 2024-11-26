@@ -24,7 +24,7 @@ textarea {
 
 input, textarea {
     border-radius: 10px;
-    border: #888 ipx solid;
+    border: var(--form-border-color);
     box-sizing: border-box;
     justify-self: center;
     background-color: var(--background-color);
@@ -33,6 +33,7 @@ input, textarea {
 
 ::placeholder {
     color: var(--form-text-color);
+    font-family: "Courier New", Courier, monospace;
 }
   
 input[type='submit'] {

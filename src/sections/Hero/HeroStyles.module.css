@@ -11,7 +11,7 @@
         max-width: 200px;
         border-radius: 50%;
         object-fit: cover;
-        border: 2px solid black;
+        border: var(--border-hero-color);
     }
 
     span {
@@ -72,6 +72,7 @@
 
 .description {
     max-width: 24ch;
+    align-self: center;
 }
 
 .info {

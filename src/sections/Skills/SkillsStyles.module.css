@@ -20,14 +20,14 @@
     align-self: center;
     flex-wrap: wrap;
     row-gap: 40px;
-    max-width: 26ch;
+    max-width: 25ch;
 }
 
 hr {
     width: 100px;
     height: 1px;
     border: none;
-    background-color: var(--text-color);
+    background-color: var(--hr-color);
     margin: 30px auto;
 }
 

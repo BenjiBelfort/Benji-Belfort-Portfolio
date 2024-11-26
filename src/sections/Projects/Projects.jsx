@@ -3,6 +3,7 @@ import ProjectCard from '../../common/ProjectCard'
 import ladb from '../../assets/ladb.webp'
 import bestOff from '../../assets/bestoff.webp'
 import nina from '../../assets/nina.webp'
+import booki from '../../assets/booki.webp'
 
 
 const Projects = () => {
@@ -27,6 +28,12 @@ const Projects = () => {
                     link="https://benjibelfort.github.io/Nina-Carducci/"
                     h3="Nina Carducci"
                     p="Site HTML, CSS & JavaScript."
+                />
+                <ProjectCard
+                    src={booki}
+                    link="https://benjibelfort.github.io/Booki/"
+                    h3="Booki"
+                    p="Site HTML & CSS."
                 />
             </div>
         </section>
