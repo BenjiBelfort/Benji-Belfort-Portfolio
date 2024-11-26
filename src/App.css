@@ -3,7 +3,6 @@
   --background-color: #fff;
   --btn-color: #0987f2;
   --btn-text-color: #fff;
-  --project-card-bg: #ffffff00;
   --text-color: #222;
   --form-text-color: #555;
   --footer-text-color: #888;
@@ -15,7 +14,6 @@
 [data-theme='dark'] {
   --background-color: #222;
   --btn-color: #f6780d;
-  --project-card-bg: #fff;
   --text-color: #fff;
   --form-text-color: #fff;
   --footer-text-color: #bbb;
@@ -74,6 +72,7 @@ p {
   cursor: pointer;
 }
 
+
 @media (width >= 800px) {
   #root {
     gap: 100px;
@@ -98,7 +97,6 @@ p {
 
 @media (width >= 1400px) {
   #root {
-
     gap: 200px;
   }
 
