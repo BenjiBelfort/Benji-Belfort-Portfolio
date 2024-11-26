@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types'; 
-import styles from '../Sections/Projects/ProjectsStyles.module.css';
+import styles from './ProjectCardStyles.module.css';
 
 const ProjectCard = ({ src, link, h3, p, label }) => {
 
