@@ -1,5 +1,6 @@
 import styles from './HeroStyles.module.css';
-import heroImg from '../../assets/hero-img.webp';
+import heroImgLight from '../../assets/hero-img.webp';
+import heroImgDark from '../../assets/hero-img-dark.webp';
 import sun from '../../assets/sun.svg';
 import moon from '../../assets/moon.svg';
 import gitHubLight from '../../assets/github-light.svg';
@@ -16,6 +17,7 @@ const Hero = () => {
     const themeIcon = theme === 'light' ? sun : moon;
     const gitHubIcon = theme === 'light' ? gitHubLight : gitHubDark;
     const linkeDinIcon = theme === 'light' ? linkeDinLight : linkeDinDark;
+    const heroImg = theme === 'light' ? heroImgLight : heroImgDark;
 
     return (
         <section id="hero" className={styles.container}>
