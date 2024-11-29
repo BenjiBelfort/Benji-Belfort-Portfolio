@@ -7,7 +7,7 @@ import booki from '../../assets/booki.webp'
 import playdrum from '../../assets/playdrum.webp'
 
 
-// label = "projet en ligne" ou "projet d'étude" ou "projet en cours"
+// label = "en ligne" ou "projet d'étude" ou "en cours"
 
 const Projects = () => {
     return (
@@ -19,14 +19,20 @@ const Projects = () => {
                     link="https://www.lesaiguillesdubaron.fr/"
                     h3="Les Aiguilles du Baron"
                     p="Site React one page."
-                    label="projet en ligne"
+                    label="en ligne"
+                    description="site..."
+                    problem="Cookies..."
+                    solution="Recherches..."
                 />
                 <ProjectCard
                     src={bestOff}
                     link="https://bestoffmusic.fr/"
                     h3="Best Off'"
                     p="Site HTML & CSS."
-                    label="projet en ligne"
+                    label="en ligne"
+                    description="site..."
+                    problem="Cookies..."
+                    solution="Recherches..."
                 />
                 <ProjectCard
                     src={nina}
@@ -34,6 +40,9 @@ const Projects = () => {
                     h3="Nina Carducci"
                     p="Site HTML, CSS & JavaScript."
                     label="projet d'étude"
+                    description="site..."
+                    problem="Cookies..."
+                    solution="Recherches..."
                 />
                 <ProjectCard
                     src={booki}
@@ -41,13 +50,19 @@ const Projects = () => {
                     h3="Booki"
                     p="Site HTML & CSS."
                     label="projet d'étude"
+                    description="site..."
+                    problem="Cookies..."
+                    solution="Recherches..."
                 />
                 <ProjectCard
                     src={playdrum}
                     link=""
                     h3="Play Drum"
                     p="Application React."
-                    label="projet en cours"
+                    label="en cours"
+                    description="site..."
+                    problem="kkkkk"
+                    solution="Recherches..."
                 />
             </div>
         </section>

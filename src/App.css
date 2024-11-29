@@ -9,6 +9,7 @@
   --border-hero-color: 2px solid black;
   --hr-color: #222;
   --form-border-color: #222 1px solid;
+  --xp-three-color: #38ada9;
 }
 
 [data-theme='dark'] {
@@ -20,6 +21,7 @@
   --border-hero-color: 2px solid #f6780d;
   --hr-color: #f6780d;
   --form-border-color: #fde5d1 1px solid;
+  --xp-three-color: #78e08f;
 }
 
 body {
@@ -35,13 +37,13 @@ body {
   gap: 60px;
 }
 
-h1, h2, h3, p {
+h1, h2, h3, h4, p {
   color: var(--text-color);
   margin: 0;
   padding: 0;
 }
 
-h2, h3, p {
+h2, h3, h4, p {
   font-family: 'Lekton', monospace;
 }
 

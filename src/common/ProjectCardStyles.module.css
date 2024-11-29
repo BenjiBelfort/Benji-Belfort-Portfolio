@@ -19,7 +19,9 @@
     position: absolute;
     right: 8px;
     top: 8px;
+    transform:rotate(45deg);
     /* background-color: rgba(9, 135, 242, 0.8); */
+    overflow: hidden;
     color: white;
     font-size: 12px;
     font-weight: bold;

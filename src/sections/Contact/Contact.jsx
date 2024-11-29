@@ -7,9 +7,9 @@ const Contact = () => {
             <form action="">
                 <div className="formGroup">
                     <label htmlFor="name" hidden>
-                        Name
+                        Nom
                     </label>
-                    <input type="text" name="name" id="name" placeholder="Name" required/>
+                    <input type="text" name="name" id="name" placeholder="Nom" required/>
                 </div>
                 <div className="formGroup">
                     <label htmlFor="email" hidden>

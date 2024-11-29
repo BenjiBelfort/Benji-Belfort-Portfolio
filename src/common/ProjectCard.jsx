@@ -1,14 +1,14 @@
 import PropTypes from 'prop-types'; 
 import styles from './ProjectCardStyles.module.css';
 
-const ProjectCard = ({ src, link, h3, p, label }) => {
+const ProjectCard = ({ src, link, h3, p, label, description, problem, solution }) => {
 
     let labelClass = "";
-    if (label === "projet en ligne") {
+    if (label === "en ligne") {
         labelClass = styles.online;
     } else if (label === "projet d'étude") {
         labelClass = styles.study;
-    } else if (label === "projet en cours") {
+    } else if (label === "en cours") {
         labelClass = styles.ongoing;
     }
 
@@ -28,16 +28,22 @@ const ProjectCard = ({ src, link, h3, p, label }) => {
             </div>
             <h3>{h3}</h3>
             <p>{p}</p>
+            <p>{description}</p>
+            <p>{problem}</p>
+            <p>{solution}</p>
         </ContentWrapper>
     );
 };
 
 ProjectCard.propTypes = {
     src: PropTypes.string.isRequired,
-    link: PropTypes.string,  // link peut être vide ou undefined
+    link: PropTypes.string,
     h3: PropTypes.string.isRequired,
     p: PropTypes.string.isRequired,
     label: PropTypes.string.isRequired,
+    description: PropTypes.string.isRequired,
+    problem: PropTypes.string.isRequired,
+    solution: PropTypes.string.isRequired,
 };
 
 export default ProjectCard;
