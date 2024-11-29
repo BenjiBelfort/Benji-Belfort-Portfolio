@@ -69,7 +69,7 @@ const Experience = () => {
                                 <span className={styles.ligne}></span>
                             </div>
                         <div className={styles.experienceRight}>
-                            <h4 className={styles.workTitle}>BAC Vebte Action Marchande</h4>
+                            <h4 className={styles.workTitle}>BAC Vente Action Marchande</h4>
                             <p className={styles.lieu}>Belfort</p>
                             <p className={styles.date}>1997</p>
                         </div>
@@ -141,7 +141,7 @@ const Experience = () => {
             </div>
         </div>
 
-        <button className={styles.button} onClick={togglePosition}>
+        <button className="hover" onClick={togglePosition}>
         {isShifted ? "Formation" : "Expérience" }
         </button>
 

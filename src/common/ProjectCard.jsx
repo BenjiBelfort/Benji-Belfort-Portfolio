@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types'; 
 import styles from './ProjectCardStyles.module.css';
 
-const ProjectCard = ({ src, link, h3, p, label, description, problem, solution }) => {
+const ProjectCard = ({ src, link, h3, label, description, problem, solution }) => {
 
     let labelClass = "";
     if (label === "en ligne") {
@@ -27,10 +27,9 @@ const ProjectCard = ({ src, link, h3, p, label, description, problem, solution }
                 <img className={styles.hover} src={src} alt={`${h3} logo`} />
             </div>
             <h3>{h3}</h3>
-            <p>{p}</p>
-            <p>{description}</p>
-            <p>{problem}</p>
-            <p>{solution}</p>
+            <p className={styles.description}>{description}</p>
+            <p className={styles.problem}>{problem}</p>
+            <p className={styles.solution}>{solution}</p>
         </ContentWrapper>
     );
 };

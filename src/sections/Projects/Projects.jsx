@@ -18,11 +18,10 @@ const Projects = () => {
                     src={ladb}
                     link="https://www.lesaiguillesdubaron.fr/"
                     h3="Les Aiguilles du Baron"
-                    p="Site React one page."
                     label="en ligne"
-                    description="site..."
-                    problem="Cookies..."
-                    solution="Recherches..."
+                    description="Site React one page."
+                    problem="Mise en place d'une gallerie avec des filtres, "
+                    solution="les compétences qu’il vous a permis de développer"
                 />
                 <ProjectCard
                     src={bestOff}
@@ -32,7 +31,7 @@ const Projects = () => {
                     label="en ligne"
                     description="site..."
                     problem="Cookies..."
-                    solution="Recherches..."
+                    solution="les compétences qu’il vous a permis de développer"
                 />
                 <ProjectCard
                     src={nina}
