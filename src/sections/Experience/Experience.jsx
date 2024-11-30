@@ -9,9 +9,9 @@ const Experience = () => {
   };
 
   return (
-    <div className={styles.container}>
+    <section id="parcours" className={styles.container}>
 
-    <h1 className="sectionTitle">Parcours</h1>
+    <h2 className="sectionTitle">Parcours</h2>
 
       {/* Cadre affichant une partie de "contenu" */}
       <div className={styles.frame}>
@@ -146,7 +146,7 @@ const Experience = () => {
         </button>
 
 
-    </div>
+    </section>
   );
 };
 

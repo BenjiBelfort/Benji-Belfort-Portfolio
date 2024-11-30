@@ -8,7 +8,7 @@ import gitHubDark from '../../assets/github-dark.svg';
 import linkeDinLight from '../../assets/linkedin-light.svg'
 import linkeDinDark from '../../assets/linkedin-dark.svg'
 
-import CV from '../../assets/CV.pdf';
+// import CV from '../../assets/CV.pdf';
 import { useTheme } from '../../common/useTheme';
 
 const Hero = () => {
@@ -32,8 +32,8 @@ const Hero = () => {
             </div>
 
             <div className={styles.info}>
-                <h1>Benjamin<br />Tisserand</h1>
-                <h2>Développeur Web</h2>
+                <h2>Benjamin<br />Tisserand</h2>
+                <h1>Développeur Web</h1>
                 <span>
                     <a href="https://github.com/BenjiBelfort" target="_blank">
                         <img src={gitHubIcon} alt="GitHub icon" />
@@ -42,9 +42,9 @@ const Hero = () => {
                         <img src={linkeDinIcon} alt="Linkedin icon" />
                     </a>
                 </span>
-                <p className={styles.description}>Passionné par le développement web, je souhaite mettre mon expérience à profit pour créer de nouveaux projets.</p>
-                <a href={CV} target="_blank">
-                    <button className="hover">Voir mon CV</button>
+                <p className={styles.description}>Passionné par le développement web front end, je souhaite mettre mon expérience à profit pour créer de nouveaux projets.</p>
+                <a href="#parcours">
+                    <button className="hover">Mon parcours</button>
                 </a>
             </div>
         

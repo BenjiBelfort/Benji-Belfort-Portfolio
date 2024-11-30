@@ -1,3 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  background: transparent;
+  font-family: "Cabin", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 
 :root {
   --background-color: #fff;
@@ -43,7 +56,7 @@ h1, h2, h3, h4, p {
   padding: 0;
 }
 
-h2, h3, h4, p {
+h1, h3, h4, p {
   font-family: 'Lekton', monospace;
 }
 
@@ -51,14 +64,21 @@ h1, h2 {
   text-transform: uppercase;
 }
 
+h1 {
+  font-size: x-large;
+}
+
 h2, h3 {
-  font-size: 25px;
   margin: 10px 0;
 }
 
-h1 {
+h3 {
+  font-size: 24px;
+}
+
+h2 {
   font-family: 'Rubik', sans-serif;
-  font-size: 32px;
+  font-size: 30px;
 }
 
 p {
@@ -67,6 +87,7 @@ p {
 }
 
 .sectionTitle {
+  font-size: 32px;
   margin-bottom: 30px;
 }
 
@@ -110,11 +131,12 @@ p {
     --border-hero-color: 3px solid #f6780d;
   }
 
-  h1 {
+  h2 {
     font-size: 48px;
   }
 
   .sectionTitle {
     margin-bottom: 75px;
+    font-size: 48px;
   }
 }

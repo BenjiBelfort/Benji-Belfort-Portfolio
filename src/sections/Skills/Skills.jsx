@@ -12,7 +12,7 @@ const Skills = () => {
 
     return (
         <section id="skills" className={styles.container}>
-            <h1 className="sectionTitle">Compétences</h1>
+            <h2 className="sectionTitle">Compétences</h2>
             <div className={styles.skillList}>
                 <SkillList src={checkMarkIcon} skill="HTML" />
                 <SkillList src={checkMarkIcon} skill="CSS" />
@@ -30,6 +30,7 @@ const Skills = () => {
                 <SkillList src={checkMarkIcon} skill="GitHub" />
                 <SkillList src={checkMarkIcon} skill="SEO" />
                 <SkillList src={checkMarkIcon} skill="Notion" />
+                <SkillList src={checkMarkIcon} skill="Figma" />
             </div>
         </section>
     );

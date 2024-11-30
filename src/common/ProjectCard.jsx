@@ -26,10 +26,17 @@ const ProjectCard = ({ src, link, h3, label, description, problem, solution }) =
                 {label && <div className={`${styles.label} ${labelClass}`}>{label}</div>}
                 <img className={styles.hover} src={src} alt={`${h3} logo`} />
             </div>
-            <h3>{h3}</h3>
-            <p className={styles.description}>{description}</p>
-            <p className={styles.problem}>{problem}</p>
-            <p className={styles.solution}>{solution}</p>
+            <div className={styles.projectcontent}>
+                <h3>{h3}</h3>
+                <p className={styles.description}>{description}</p>
+                <p className={styles.problem}>
+                    {Array.isArray(problem)
+                    ? problem.map((line, index) => <span key={index}>{line}<br /></span>)
+                    : problem}
+                </p>
+                <p className={styles.competence}>Compétences</p>
+                <p className={styles.solution}>{solution}</p>
+            </div>
         </ContentWrapper>
     );
 };
@@ -38,7 +45,6 @@ ProjectCard.propTypes = {
     src: PropTypes.string.isRequired,
     link: PropTypes.string,
     h3: PropTypes.string.isRequired,
-    p: PropTypes.string.isRequired,
     label: PropTypes.string.isRequired,
     description: PropTypes.string.isRequired,
     problem: PropTypes.string.isRequired,
