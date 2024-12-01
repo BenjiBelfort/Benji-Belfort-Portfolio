@@ -63,8 +63,8 @@ const Contact = () => {
 
                 {/* Captcha */}
                 <div className="formGroup">
-                    <p>
-                        Selon JCVD, Combien font <strong>1</strong> + <strong>1</strong> ?
+                    <p className={styles.jcvd}>
+                        Selon <strong>JCVD</strong>, combien font <strong>1</strong> + <strong>1</strong> ?
                     </p>
                     <input
                         type="text"
