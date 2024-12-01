@@ -47,7 +47,7 @@ ProjectCard.propTypes = {
     h3: PropTypes.string.isRequired,
     label: PropTypes.string.isRequired,
     description: PropTypes.string.isRequired,
-    problem: PropTypes.string.isRequired,
+    problem: PropTypes.array.isRequired,
     solution: PropTypes.string.isRequired,
 };
 

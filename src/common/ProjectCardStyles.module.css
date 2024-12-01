@@ -5,23 +5,11 @@
     
 }
 
-.projectCard.noLink {
-    transition: transform 200ms ease-in-out;
-}
-
-.projectCard:hover {
-    transform: scale(1.05);
-}
-
-.projectCard.noLink:hover {
-    transform: scale(1.05);
-}
-
 .label {
     position: absolute;
     width: 100%;
     top: 20px;
-    left: -100px;
+    left: -95px;
     rotate: -45deg;
 
     overflow: hidden;
@@ -70,4 +58,18 @@
 
 .solution {
     font-size: 14px;
+}
+
+@media (width >= 800px) {
+    .projectCard.noLink {
+        transition: transform 200ms ease-in-out;
+    }
+    
+    .projectCard:hover {
+        transform: scale(1.05);
+    }
+    
+    .projectCard.noLink:hover {
+        transform: scale(1.05);
+    }
 }

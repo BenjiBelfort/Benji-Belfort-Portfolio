@@ -21,7 +21,7 @@ const Projects = () => {
                     label="en ligne"
                     description="Site React one page."
                     problem={[
-                        "Mise en place d'une gallerie filtrée",
+                        "Mise en place d'une galerie filtrée",
                         "et d'un formulaire de contact.",
                         "Gestion des cookies et SEO."
                       ]}
@@ -57,7 +57,9 @@ const Projects = () => {
                     h3="Booki"
                     label="projet d'étude"
                     description="Site HTML & CSS."
-                    problem="Réaliser le front end responsive à partir d'une maquette Figma"
+                    problem={[
+                        "Réaliser le front end responsive à partir d'une maquette Figma",
+                        ]}
                     solution="HTML, CSS, Figma"
                 />
                 {/* <ProjectCard
