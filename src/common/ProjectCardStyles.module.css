@@ -1,3 +1,9 @@
+.projectCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .projectImageWrapper {
     position: relative;
     display: inline-block;
@@ -11,7 +17,6 @@
     top: 20px;
     left: -95px;
     rotate: -45deg;
-
     overflow: hidden;
     color: white;
     text-align: center;
@@ -42,7 +47,7 @@
 }
 
 .description {
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
 .problem {
@@ -50,15 +55,81 @@
     font-size: 14px;
 }
 
-.competence {
-    font-size: 14px;
-    font-weight: bold;
-    margin-bottom: 5px;
-}
 
 .solution {
     font-size: 14px;
 }
+
+.problemBox {
+    border: 1px solid var(--xp-three-color);
+    width: 250px;
+    margin: 20px auto 0;
+    border-radius:  0 0 10px 10px;
+    position: relative;
+}
+
+.problemBoxTitle {
+    width: 250px;
+    text-transform: uppercase;
+    top: -11px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 3px 0;
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    white-space: nowrap;
+}
+
+.problemBoxTitle p {
+    width: 80px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 0.8rem;
+    color: var(--xp-three-color);
+    background: var(--background-color);
+}
+
+.problemBoxContent {
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    margin-top: 9px;
+    padding: 6px;
+    gap: 5px;
+    align-items: center;
+}
+
+.problemItem {
+    display: contents;
+}
+
+.problemBoxItem p {
+    font-size: 0.9rem;
+
+    margin-left: 5px;
+}
+
+.arrow {
+    color: var(--xp-three-color);
+}
+
+.tagsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.tag {
+    background-color: var(--background-color-reverse);
+    color: var(--text-color-reverse);
+    padding: 3px 8px;
+    border-radius: 10px;
+    font-size: 0.8rem;
+    cursor: default;
+    transition: transform 0.2s;
+}
+
 
 @media (width >= 800px) {
     .projectCard.noLink {

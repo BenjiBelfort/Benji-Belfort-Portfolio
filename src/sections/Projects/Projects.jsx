@@ -19,58 +19,56 @@ const Projects = () => {
                     link="https://www.lesaiguillesdubaron.fr/"
                     h3="Les Aiguilles du Baron"
                     label="en ligne"
-                    description="Site React one page."
-                    problem={[
-                        "Mise en place d'une galerie filtrée",
-                        "et d'un formulaire de contact.",
+                    soustitre="Salon de tatouage"
+                    description={[
+                        "Site vitrine one page, contenant une galerie filtrée et un formulaire de contact.",
                         "Gestion des cookies et SEO."
-                      ]}
-                    solution="React, HTML, CSS, SEO, EmailJS"
+                    ]}
+                    problem="Formulaire de contact"
+                    solution="Implémentation EmailJS"
+                    competences={["HTML", "CSS", "JavaScript", "React", "SEO", "EmailJS"]}
                 />
                 <ProjectCard
                     src={bestOff}
                     link="https://bestoffmusic.fr/"
                     h3="Best Off'"
                     label="en ligne"
-                    description="Site HTML & CSS."
-                    problem={[
-                        "Un défi :",
-                        "mettre en ligne mon premier site"
-                      ]}
-                    solution="HTML, CSS, hébergement, FileZilla"
+                    soustitre="Rock Symphonique"
+                    description={[
+                        "Site vitrine simple, responsive et",
+                        "contenant des liens"
+                    ]}
+                    problem="Mettre en ligne un site web"
+                    solution="Hébergement & FileZilla"
+                    competences={["HTML", "CSS", "Hébergement", "FileZilla"]}
                 />
                 <ProjectCard
                     src={nina}
                     link="https://benjibelfort.github.io/Nina-Carducci/"
                     h3="Nina Carducci"
                     label="projet d'étude"
-                    description="Site HTML, CSS & JavaScript."
-                    problem={[
+                    soustitre="Photographe"
+                    description={[
                         "Debugger et optimiser !",
                         "Identifier une erreur dans le code JS",
-                      ]}
-                    solution="Utilisation des outils dev, SEO, performances, Wave"
+                    ]}
+                    problem="Vitesse de chargement du site"
+                    solution="Optimisation des images et minification des fichiers"
+                    competences={["SEO", "DevTools", "JavaScript"]}
                 />
                 <ProjectCard
                     src={booki}
                     link="https://benjibelfort.github.io/Booki/"
                     h3="Booki"
                     label="projet d'étude"
-                    description="Site HTML & CSS."
-                    problem={[
+                    soustitre="Agence de location"
+                    description={[
                         "Réaliser le front end responsive à partir d'une maquette Figma",
-                        ]}
-                    solution="HTML, CSS, Figma"
+                    ]}
+                    problem="Responsive design"
+                    solution="Media queries"
+                    competences={["HTML", "CSS", "Figma", "GitHub"]}
                 />
-                {/* <ProjectCard
-                    src={playdrum}
-                    link=""
-                    h3="Play Drum"
-                    label="en cours"
-                    description="Application web React."
-                    problem="Mettre en place "
-                    solution="Recherches..."
-                /> */}
             </div>
         </section>
     )

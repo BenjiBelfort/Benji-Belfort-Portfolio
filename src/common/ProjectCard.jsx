@@ -1,7 +1,8 @@
 import PropTypes from 'prop-types'; 
 import styles from './ProjectCardStyles.module.css';
+import { MdPlayArrow } from "react-icons/md";
 
-const ProjectCard = ({ src, link, h3, label, description, problem, solution }) => {
+const ProjectCard = ({ src, link, h3, label, soustitre, description, problem, solution, competences }) => {
 
     let labelClass = "";
     if (label === "en ligne") {
@@ -28,14 +29,37 @@ const ProjectCard = ({ src, link, h3, label, description, problem, solution }) =
             </div>
             <div className={styles.projectcontent}>
                 <h3>{h3}</h3>
-                <p className={styles.description}>{description}</p>
+                <p className={styles.description}>{soustitre}</p>
                 <p className={styles.problem}>
-                    {Array.isArray(problem)
-                    ? problem.map((line, index) => <span key={index}>{line}<br /></span>)
-                    : problem}
+                    {Array.isArray(description)
+                    ? description.map((line, index) => <span key={index}>{line}<br /></span>)
+                    : description}
                 </p>
-                <p className={styles.competence}>Compétences</p>
-                <p className={styles.solution}>{solution}</p>
+                <div className={styles.problemBox}>
+                    <div className={styles.problemBoxTitle}>
+                        <p>Problème</p>
+                        <p>Solution</p>
+                    </div>
+                    <div className={styles.problemBoxContent}>
+                        <div className={styles.problemBoxItem}>
+                            <p>{problem}</p>
+                        </div>
+                        <div className={styles.problemBoxItem}>
+                            <MdPlayArrow className={styles.arrow}/>
+                        </div>
+                        <div className={styles.problemBoxItem}>
+                            <p>{solution}</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div className={styles.tagsContainer}>
+                    {competences.map((competence, index) => (
+                        <span key={index} className={styles.tag}>
+                            {competence}
+                        </span>
+                    ))}
+                </div>
             </div>
         </ContentWrapper>
     );
@@ -46,9 +70,11 @@ ProjectCard.propTypes = {
     link: PropTypes.string,
     h3: PropTypes.string.isRequired,
     label: PropTypes.string.isRequired,
-    description: PropTypes.string.isRequired,
-    problem: PropTypes.array.isRequired,
+    soustitre: PropTypes.string.isRequired,
+    description: PropTypes.arrayOf(PropTypes.string).isRequired,
+    problem: PropTypes.string.isRequired,
     solution: PropTypes.string.isRequired,
+    competences: PropTypes.arrayOf(PropTypes.string).isRequired,
 };
 
 export default ProjectCard;
