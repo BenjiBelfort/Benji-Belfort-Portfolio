@@ -4,6 +4,7 @@ import ladb from '../../assets/ladb.webp'
 import bestOff from '../../assets/bestoff.webp'
 import nina from '../../assets/nina.webp'
 import booki from '../../assets/booki.webp'
+import charlotte from '../../assets/Charlotte.webp'
 // import playdrum from '../../assets/playdrum.webp'
 
 
@@ -27,6 +28,19 @@ const Projects = () => {
                     problem="Formulaire de contact"
                     solution="Implémentation EmailJS"
                     competences={["HTML", "CSS", "JavaScript", "React", "SEO", "EmailJS"]}
+                />
+                <ProjectCard
+                    src={charlotte}
+                    link="https://parentalite-vivreensemble.fr/"
+                    h3="Charlotte Litot-Picard"
+                    label="en ligne"
+                    soustitre="Parentalité & Vivre ensemble"
+                    description={[
+                        "Site WordPress"
+                    ]}
+                    problem="Être autonome dans la gestion de mon site"
+                    solution="WordPress"
+                    competences={["WordPress", "Plug In"]}
                 />
                 <ProjectCard
                     src={bestOff}

@@ -28,4 +28,4 @@ ThemeProvider.propTypes = {
     children: PropTypes.node.isRequired,
 };
 
-export { ThemeContext }; // Assurez-vous de continuer à exporter ThemeContext
+export { ThemeContext };
