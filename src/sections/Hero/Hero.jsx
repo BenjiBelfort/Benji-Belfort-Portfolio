@@ -38,7 +38,7 @@ const Hero = () => {
                     <a href="https://github.com/BenjiBelfort" target="_blank">
                         <img src={gitHubIcon} alt="GitHub icon" />
                     </a>
-                    <a href="https://www.linkedin.com/in/benjamin-tisserand-432aa259/" target="_blank">
+                    <a href="https://www.linkedin.com/in/benjamin-tisserand-dev/" target="_blank">
                         <img src={linkeDinIcon} alt="Linkedin icon" />
                     </a>
                 </span>
