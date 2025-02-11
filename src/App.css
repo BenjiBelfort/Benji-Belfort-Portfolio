@@ -97,6 +97,10 @@ p {
   margin-bottom: 30px;
 }
 
+a {
+  color: var(--btn-color);
+}
+
 .hover {
   cursor: pointer;
 }
