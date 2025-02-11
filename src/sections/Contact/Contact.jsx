@@ -11,7 +11,7 @@ const Contact = () => {
         e.preventDefault();
 
         // Validation du captcha
-        if (parseInt(captchaInput, 10) !== 1) {
+        if (![1, 11].includes(parseInt(captchaInput, 10))) {
             setCaptchaError(true);
             return;
         }
@@ -74,7 +74,18 @@ const Contact = () => {
                         required
                     />
                     {captchaError && (
-                        <p className={styles.error}>Erreur : la réponse est incorrecte.</p>
+                        <>
+                            <p className={styles.error}>
+                                Indice : la réponse se trouve {' '}
+                                <a
+                                    href="https://www.youtube.com/watch?v=FTKV29C7yJE"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    ici
+                                </a>
+                            </p>
+                        </>
                     )}
                 </div>
 
