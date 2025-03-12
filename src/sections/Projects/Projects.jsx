@@ -5,6 +5,7 @@ import bestOff from '../../assets/bestoff.webp'
 import nina from '../../assets/nina.webp'
 import booki from '../../assets/booki.webp'
 import charlotte from '../../assets/Charlotte.webp'
+import phil from '../../assets/phil-bullet-art.webp'
 // import playdrum from '../../assets/playdrum.webp'
 
 
@@ -42,6 +43,20 @@ const Projects = () => {
                     solution="WordPress"
                     competences={["WordPress", "Plug In"]}
                 />
+                <ProjectCard
+                    src={phil}
+                    link="https://www.bullet-art.com/"
+                    h3="Phil Bullet art"
+                    label="en ligne"
+                    soustitre="Bullet artiste"
+                    description={[
+                        "Site one page avec galerie d'images",
+                    ]}
+                    problem="Simplifier le style"
+                    solution="Tailwind CSS"
+                    competences={["React", "Tailwind CSS"]}
+                />
+
                 <ProjectCard
                     src={bestOff}
                     link="https://bestoffmusic.fr/"
