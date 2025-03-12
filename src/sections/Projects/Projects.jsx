@@ -46,9 +46,9 @@ const Projects = () => {
                 <ProjectCard
                     src={phil}
                     link="https://www.bullet-art.com/"
-                    h3="Phil Bullet art"
+                    h3="Phil Bullet Art"
                     label="en ligne"
-                    soustitre="Bullet artiste"
+                    soustitre="Bullet Artiste"
                     description={[
                         "Site one page avec galerie d'images",
                     ]}
