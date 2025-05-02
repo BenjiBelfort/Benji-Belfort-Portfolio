@@ -64,12 +64,11 @@ const Projects = () => {
                     label="en ligne"
                     soustitre="Rock Symphonique"
                     description={[
-                        "Site vitrine simple, responsive et",
-                        "contenant des liens"
+                        "Vitrine et archives du groupe",
                     ]}
                     problem="Mettre en ligne un site web"
                     solution="Hébergement & FileZilla"
-                    competences={["HTML", "CSS", "Hébergement", "FileZilla"]}
+                    competences={["React", "React Router", "GitHub",  "Tailwind CSS" ]}
                 />
                 <ProjectCard
                     src={nina}
