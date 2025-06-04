@@ -6,6 +6,7 @@ import nina from '../../assets/nina.webp'
 import booki from '../../assets/booki.webp'
 import charlotte from '../../assets/Charlotte.webp'
 import phil from '../../assets/phil-bullet-art.webp'
+import happyDog from '../../assets/happy-dog.webp'
 // import playdrum from '../../assets/playdrum.webp'
 
 
@@ -70,6 +71,21 @@ const Projects = () => {
                     solution="Hébergement & FileZilla"
                     competences={["React", "React Router", "GitHub",  "Tailwind CSS" ]}
                 />
+
+                <ProjectCard
+                    src={happyDog}
+                    link="https://happy-dog-belfort.fr/"
+                    h3="Happy Dog"
+                    label="en ligne"
+                    soustitre="La boutique des chiens heureux"
+                    description={[
+                        "Mise en ligne d'un site vitrine avec multi-pages",
+                    ]}
+                    problem="Apprendre un nouveau framework"
+                    solution="Utilisation de Next.js pour le rendu côté client"
+                    competences={["Next.js",  "Tailwind CSS" ]}
+                />
+
                 <ProjectCard
                     src={nina}
                     link="https://benjibelfort.github.io/Nina-Carducci/"
