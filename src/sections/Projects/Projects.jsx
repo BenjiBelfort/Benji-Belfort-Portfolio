@@ -79,7 +79,7 @@ const Projects = () => {
                     label="en ligne"
                     soustitre="La boutique des chiens heureux"
                     description={[
-                        "Mise en ligne d'un site vitrine avec multi-pages",
+                        "Mise en ligne d'un site vitrine multi-pages",
                     ]}
                     problem="Apprendre un nouveau framework"
                     solution="Utilisation de Next.js pour le rendu côté client"
